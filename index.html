@@ -51,8 +51,8 @@
       e.preventDefault();
 
       emailjs.send("service_ldrdpm2", "template_wvb58i7", {
-        nombre: form.nombre.value,
-        correo: form.correo.value
+        name: form.nombre.value,
+        email: form.correo.value
       }).then(() => {
         mensaje.textContent = "✅ Revisa tu correo, te hemos enviado un mensaje.";
       }, (error) => {
